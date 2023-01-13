@@ -1,0 +1,19 @@
+[package]
+name = "socioty_esp32"
+version = "0.1.0"
+authors = ["Tushar Jois <16180220+tusharjois@users.noreply.github.com>"]
+edition = "2021"
+resolver = "2"
+
+[features]
+pio = ["esp-idf-sys/pio"]
+aead = ["dep:ascon-aead"]
+
+[dependencies]
+esp-idf-sys = { version = "0.31.11", features = ["binstart"] }
+socioty = { path = "../.." }
+rand_core = { version = "0.5" }
+ascon-aead = { version = "0.4", optional = true }
+
+[build-dependencies]
+embuild = "0.30.4"

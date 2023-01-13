@@ -1,0 +1,22 @@
+[workspace]
+members = ["implementations/*"]
+
+[package]
+name = "socioty"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+curve25519-dalek = { version = "3", default-features = false, features = [
+    "u32_backend",
+] }
+sha2 = { version = "0.9", default-features = false }
+rand_core = { version = "0.5" }
+
+[dev-dependencies]
+rand = "0.7"
+bencher = "0.1"
+
+[[bench]]
+name = "bench_dprf"
+harness = false

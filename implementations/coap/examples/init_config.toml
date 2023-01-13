@@ -1,0 +1,20 @@
+# Example CoAP config file
+
+# Fill in with the client IPs used for experiments
+clients = [
+    "localhost:5680",
+    "localhost:5681",
+    "localhost:5682",
+    "localhost:5683",
+    "localhost:5684",
+]
+#clients = [
+#    "128.220.247.222:5683",
+#    "128.220.247.223:5683",
+#    "128.220.247.224:5683",
+#    "128.220.247.226:5683",
+#    "128.220.247.230:5683",
+#]
+
+# The threshold k such that k <= n outputs can reconstruct
+k = 3

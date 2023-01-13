@@ -1,0 +1,16 @@
+[package]
+name = "socioty_mqtt"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rumqttc = { version = "0.20.0" }
+tokio = { version = "1.1", features = ["rt-multi-thread"] }
+confy = { version = "0.5.0" }
+serde = { version = "1.0", features = ["derive"] }
+rand = { version = "0.7" }
+socioty = { path = "../.." }
+ascon-aead = { version = "0.4" }
+data-encoding = { version = "2.3.3" }

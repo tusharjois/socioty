@@ -1,0 +1,15 @@
+#!/bin/bash
+
+EVAL_RDS=$1
+
+eval "./socioty_benchmark_eval $EVAL_RDS aead > output/eval_${EVAL_RDS}_iterations.txt"
+
+for n in {5..12}
+do
+    for (( t=$n-2; t<=$n; t++ ))
+    do
+        eval "./socioty_benchmark_init $EVAL_RDS $n $t > output/init_${EVAL_RDS}_${n}_${t}.txt"
+        eval "./socioty_benchmark_reconstruct $EVAL_RDS $n $t > output/reconstruct_${EVAL_RDS}_${n}_${t}.txt"
+    done
+done
+

@@ -1,0 +1,45 @@
+#!/bin/zsh -f
+
+autoload colors; colors
+
+# Compile command
+ccmd="cargo build -p socioty_benchmark --release --target" # Add target based on the device 
+
+# Targets
+pizero="arm-unknown-linux-musleabihf"
+pitwo_three="armv7-unknown-linux-musleabihf"
+
+if [[ $1 == "build" ]]; then
+    eval "$ccmd $pizero"
+    if [ $? -ne 0 ]; then
+        echo "Pi zero compilation failed. See error"
+        exit 1
+    fi
+    eval "$ccmd $pitwo_three"
+    if [ $? -ne 0 ]; then
+        echo "Pi 2/3 compilation failed. See error"
+        exit 1
+    fi
+fi
+if [[ $2 == "send" ]]; then
+    # Pi Model 2/3
+    # ssh config has nodes listed as <nodeXX>
+    for i in {1..9}
+    do
+        echo "$fg_bold[blue]Node0$i$reset_color"
+        scp benches/local_benchmarking node0$i:/home/logan/benchmarks
+        scp target/$pitwo_three/release/socioty_benchmark_eval node0$i:/home/logan/benchmarks
+        scp target/$pitwo_three/release/socioty_benchmark_reconstruct node0$i:/home/logan/benchmarks
+        scp target/$pitwo_three/release/socioty_benchmark_init node0$i:/home/logan/benchmarks
+        echo "$fg_bold[green]Node0$i Done$reset_color"
+    done
+    for i in {10..12}
+    do
+        echo "$fg_bold[blue]Node0$i$reset_color"
+        scp benches/local_benchmarking node$i:/home/logan/benchmarks
+        scp target/$pizero/release/socioty_benchmark_eval node$i:/home/logan/benchmarks
+        scp target/$pizero/release/socioty_benchmark_reconstruct node$i:/home/logan/benchmarks
+        scp target/$pizero/release/socioty_benchmark_init node$i:/home/logan/benchmarks
+        echo "$fg_bold[green]Node0$i Done$reset_color"
+    done
+fi

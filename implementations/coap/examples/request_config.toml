@@ -1,0 +1,44 @@
+# TODO: DEBUG 
+# NOT TO BE USED IN FINAL IMPLEMENTATION
+
+# Addresses to connect to for request
+addresses = {"localhost:5683" = [93, 225, 12, 41, 225, 27, 201, 127, 79, 147, 154, 214, 118, 48, 143, 98]}
+
+# Key with which to combine in the final step
+# DO NOT RE-USE THIS EXAMPLE VALUE!
+# Will be randomly generated in a new config file
+#key = [
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#    96,
+#]
+key = [60, 10, 120, 108, 36, 206, 137, 201, 140, 203, 226, 93, 195, 168, 59, 249, 138, 18, 116, 185, 68, 152, 169, 169, 235, 57, 25, 236, 122, 148, 41, 8]

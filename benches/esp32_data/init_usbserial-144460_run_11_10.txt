@@ -1,0 +1,22 @@
+spawn bash -c source /Users/logan/export-esp.sh; RUNS=1000 CLIENTS=11 K=10 cargo espflash --monitor /dev/tty.usbserial-144460 --bin socioty_esp32_init --release
+New version of cargo-espflash is available: v2.0.0-rc.3
+
+Serial port: /dev/tty.usbserial-144460
+Connecting...
+
+[0m[0m[1m[36m    Blocking[0m waiting for file lock on package cache
+[0m[0m[1m[36m    Blocking[0m waiting for file lock on package cache
+[0m[0m[1m[36m    Blocking[0m waiting for file lock on package cache
+[0m[0m[1m[36m    Blocking[0m waiting for file lock on package cache
+[0m[0m[1m[36m    Blocking[0m waiting for file lock on package cache
+[0m[0m[1m[36m    Blocking[0m waiting for file lock on package cache
+[0m[0m[1m[36m    Blocking[0m waiting for file lock on build directory
+[0m[0m[1m[32m    Finished[0m release [optimized] target(s) in 2.59s
+Chip type:         ESP32 (revision 3)
+Crystal frequency: 40MHz
+Flash size:        4MB
+Features:          WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+MAC address:       ec:62:60:76:8e:ac
+Error: 
+  [31m×[0m No such file or directory (os error 2)
+

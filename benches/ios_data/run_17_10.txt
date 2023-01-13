@@ -1,0 +1,306 @@
+JJU3:55917838: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917838: Reconstructed [106, 40, 238, 167, ...] -> Value 1781067431 -> Code 067431
+Test Threshold 10 (JJU3): Code generation time: 397231125 ns
+JJU3:55917838: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917838: Reconstructed [106, 40, 238, 167, ...] -> Value 1781067431 -> Code 067431
+Test Threshold 10 (JJU3): Code generation time: 177900541 ns
+JJU3:55917838: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917838: Reconstructed [106, 40, 238, 167, ...] -> Value 1781067431 -> Code 067431
+Test Threshold 10 (JJU3): Code generation time: 230005375 ns
+JJU3:55917839: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917839: Reconstructed [8, 8, 201, 105, ...] -> Value 134793577 -> Code 793577
+Test Threshold 10 (JJU3): Code generation time: 232700917 ns
+JJU3:55917839: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917839: Reconstructed [8, 8, 201, 105, ...] -> Value 134793577 -> Code 793577
+Test Threshold 10 (JJU3): Code generation time: 225606167 ns
+JJU3:55917839: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917839: Reconstructed [8, 8, 201, 105, ...] -> Value 134793577 -> Code 793577
+Test Threshold 10 (JJU3): Code generation time: 178111208 ns
+JJU3:55917839: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917839: Reconstructed [8, 8, 201, 105, ...] -> Value 134793577 -> Code 793577
+Test Threshold 10 (JJU3): Code generation time: 221569417 ns
+JJU3:55917839: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917839: Reconstructed [8, 8, 201, 105, ...] -> Value 134793577 -> Code 793577
+Test Threshold 10 (JJU3): Code generation time: 173244500 ns
+JJU3:55917839: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917839: Reconstructed [8, 8, 201, 105, ...] -> Value 134793577 -> Code 793577
+Test Threshold 10 (JJU3): Code generation time: 228834792 ns
+JJU3:55917840: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917840: Reconstructed [132, 135, 188, 110, ...] -> Value 2223488110 -> Code 488110
+Test Threshold 10 (JJU3): Code generation time: 170920208 ns
+JJU3:55917840: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917840: Reconstructed [132, 135, 188, 110, ...] -> Value 2223488110 -> Code 488110
+Test Threshold 10 (JJU3): Code generation time: 212272000 ns
+JJU3:55917840: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917840: Reconstructed [132, 135, 188, 110, ...] -> Value 2223488110 -> Code 488110
+Test Threshold 10 (JJU3): Code generation time: 220744583 ns
+JJU3:55917840: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917840: Reconstructed [132, 135, 188, 110, ...] -> Value 2223488110 -> Code 488110
+Test Threshold 10 (JJU3): Code generation time: 273244125 ns
+JJU3:55917840: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917840: Reconstructed [132, 135, 188, 110, ...] -> Value 2223488110 -> Code 488110
+Test Threshold 10 (JJU3): Code generation time: 180064541 ns
+JJU3:55917840: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917840: Reconstructed [132, 135, 188, 110, ...] -> Value 2223488110 -> Code 488110
+Test Threshold 10 (JJU3): Code generation time: 223540500 ns
+JJU3:55917841: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917841: Reconstructed [122, 168, 85, 17, ...] -> Value 2057852177 -> Code 852177
+Test Threshold 10 (JJU3): Code generation time: 163963666 ns
+JJU3:55917841: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917841: Reconstructed [122, 168, 85, 17, ...] -> Value 2057852177 -> Code 852177
+Test Threshold 10 (JJU3): Code generation time: 225871083 ns
+JJU3:55917841: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917841: Reconstructed [122, 168, 85, 17, ...] -> Value 2057852177 -> Code 852177
+Test Threshold 10 (JJU3): Code generation time: 225153250 ns
+JJU3:55917841: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917841: Reconstructed [122, 168, 85, 17, ...] -> Value 2057852177 -> Code 852177
+Test Threshold 10 (JJU3): Code generation time: 214155375 ns
+JJU3:55917841: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917841: Reconstructed [122, 168, 85, 17, ...] -> Value 2057852177 -> Code 852177
+Test Threshold 10 (JJU3): Code generation time: 171466166 ns
+JJU3:55917841: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917841: Reconstructed [122, 168, 85, 17, ...] -> Value 2057852177 -> Code 852177
+Test Threshold 10 (JJU3): Code generation time: 232023875 ns
+JJU3:55917842: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917842: Reconstructed [232, 122, 189, 95, ...] -> Value 3900357983 -> Code 357983
+Test Threshold 10 (JJU3): Code generation time: 170450375 ns
+JJU3:55917842: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917842: Reconstructed [232, 122, 189, 95, ...] -> Value 3900357983 -> Code 357983
+Test Threshold 10 (JJU3): Code generation time: 204561333 ns
+JJU3:55917842: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917842: Reconstructed [232, 122, 189, 95, ...] -> Value 3900357983 -> Code 357983
+Test Threshold 10 (JJU3): Code generation time: 174864500 ns
+JJU3:55917842: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917842: Reconstructed [232, 122, 189, 95, ...] -> Value 3900357983 -> Code 357983
+Test Threshold 10 (JJU3): Code generation time: 259344250 ns
+JJU3:55917842: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917842: Reconstructed [232, 122, 189, 95, ...] -> Value 3900357983 -> Code 357983
+Test Threshold 10 (JJU3): Code generation time: 200095584 ns
+JJU3:55917842: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917842: Reconstructed [232, 122, 189, 95, ...] -> Value 3900357983 -> Code 357983
+Test Threshold 10 (JJU3): Code generation time: 239129834 ns
+JJU3:55917843: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917843: Reconstructed [252, 244, 36, 36, ...] -> Value 4243858468 -> Code 858468
+Test Threshold 10 (JJU3): Code generation time: 174253625 ns
+JJU3:55917843: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917843: Reconstructed [252, 244, 36, 36, ...] -> Value 4243858468 -> Code 858468
+Test Threshold 10 (JJU3): Code generation time: 266199834 ns
+JJU3:55917843: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917843: Reconstructed [252, 244, 36, 36, ...] -> Value 4243858468 -> Code 858468
+Test Threshold 10 (JJU3): Code generation time: 175211250 ns
+JJU3:55917843: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917843: Reconstructed [252, 244, 36, 36, ...] -> Value 4243858468 -> Code 858468
+Test Threshold 10 (JJU3): Code generation time: 214975291 ns
+JJU3:55917843: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917843: Reconstructed [252, 244, 36, 36, ...] -> Value 4243858468 -> Code 858468
+Test Threshold 10 (JJU3): Code generation time: 198762333 ns
+JJU3:55917843: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917843: Reconstructed [252, 244, 36, 36, ...] -> Value 4243858468 -> Code 858468
+Test Threshold 10 (JJU3): Code generation time: 265132167 ns
+JJU3:55917844: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917844: Reconstructed [80, 54, 63, 38, ...] -> Value 1345732390 -> Code 732390
+Test Threshold 10 (JJU3): Code generation time: 202276625 ns
+JJU3:55917844: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917844: Reconstructed [80, 54, 63, 38, ...] -> Value 1345732390 -> Code 732390
+Test Threshold 10 (JJU3): Code generation time: 256354084 ns
+JJU3:55917844: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917844: Reconstructed [80, 54, 63, 38, ...] -> Value 1345732390 -> Code 732390
+Test Threshold 10 (JJU3): Code generation time: 177655792 ns
+JJU3:55917844: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917844: Reconstructed [80, 54, 63, 38, ...] -> Value 1345732390 -> Code 732390
+Test Threshold 10 (JJU3): Code generation time: 310418375 ns
+JJU3:55917844: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917844: Reconstructed [80, 54, 63, 38, ...] -> Value 1345732390 -> Code 732390
+Test Threshold 10 (JJU3): Code generation time: 177908459 ns
+JJU3:55917844: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917844: Reconstructed [80, 54, 63, 38, ...] -> Value 1345732390 -> Code 732390
+Test Threshold 10 (JJU3): Code generation time: 206003583 ns
+JJU3:55917845: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917845: Reconstructed [244, 12, 120, 16, ...] -> Value 4094457872 -> Code 457872
+Test Threshold 10 (JJU3): Code generation time: 197272625 ns
+JJU3:55917845: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917845: Reconstructed [244, 12, 120, 16, ...] -> Value 4094457872 -> Code 457872
+Test Threshold 10 (JJU3): Code generation time: 242855292 ns
+JJU3:55917845: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917845: Reconstructed [244, 12, 120, 16, ...] -> Value 4094457872 -> Code 457872
+Test Threshold 10 (JJU3): Code generation time: 181340250 ns
+JJU3:55917845: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917845: Reconstructed [244, 12, 120, 16, ...] -> Value 4094457872 -> Code 457872
+Test Threshold 10 (JJU3): Code generation time: 272457542 ns
+JJU3:55917845: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917845: Reconstructed [244, 12, 120, 16, ...] -> Value 4094457872 -> Code 457872
+Test Threshold 10 (JJU3): Code generation time: 177910417 ns
+JJU3:55917845: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917845: Reconstructed [244, 12, 120, 16, ...] -> Value 4094457872 -> Code 457872
+Test Threshold 10 (JJU3): Code generation time: 332003583 ns
+JJU3:55917846: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917846: Reconstructed [240, 125, 173, 35, ...] -> Value 4034768163 -> Code 768163
+Test Threshold 10 (JJU3): Code generation time: 177237917 ns
+JJU3:55917846: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917846: Reconstructed [240, 125, 173, 35, ...] -> Value 4034768163 -> Code 768163
+Test Threshold 10 (JJU3): Code generation time: 211303167 ns
+JJU3:55917846: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917846: Reconstructed [240, 125, 173, 35, ...] -> Value 4034768163 -> Code 768163
+Test Threshold 10 (JJU3): Code generation time: 172806041 ns
+JJU3:55917846: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917846: Reconstructed [240, 125, 173, 35, ...] -> Value 4034768163 -> Code 768163
+Test Threshold 10 (JJU3): Code generation time: 215346292 ns
+JJU3:55917846: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917846: Reconstructed [240, 125, 173, 35, ...] -> Value 4034768163 -> Code 768163
+Test Threshold 10 (JJU3): Code generation time: 177246541 ns
+JJU3:55917846: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917846: Reconstructed [240, 125, 173, 35, ...] -> Value 4034768163 -> Code 768163
+Test Threshold 10 (JJU3): Code generation time: 204377625 ns
+JJU3:55917847: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917847: Reconstructed [14, 86, 91, 233, ...] -> Value 240540649 -> Code 540649
+Test Threshold 10 (JJU3): Code generation time: 180171583 ns
+JJU3:55917847: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917847: Reconstructed [14, 86, 91, 233, ...] -> Value 240540649 -> Code 540649
+Test Threshold 10 (JJU3): Code generation time: 214871292 ns
+JJU3:55917847: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917847: Reconstructed [14, 86, 91, 233, ...] -> Value 240540649 -> Code 540649
+Test Threshold 10 (JJU3): Code generation time: 176159250 ns
+JJU3:55917847: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917847: Reconstructed [14, 86, 91, 233, ...] -> Value 240540649 -> Code 540649
+Test Threshold 10 (JJU3): Code generation time: 214753125 ns
+JJU3:55917847: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917847: Reconstructed [14, 86, 91, 233, ...] -> Value 240540649 -> Code 540649
+Test Threshold 10 (JJU3): Code generation time: 169574833 ns
+JJU3:55917847: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917847: Reconstructed [14, 86, 91, 233, ...] -> Value 240540649 -> Code 540649
+Test Threshold 10 (JJU3): Code generation time: 241105625 ns
+JJU3:55917848: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917848: Reconstructed [22, 127, 23, 64, ...] -> Value 377427776 -> Code 427776
+Test Threshold 10 (JJU3): Code generation time: 174764125 ns
+JJU3:55917848: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917848: Reconstructed [22, 127, 23, 64, ...] -> Value 377427776 -> Code 427776
+Test Threshold 10 (JJU3): Code generation time: 211562125 ns
+JJU3:55917848: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917848: Reconstructed [22, 127, 23, 64, ...] -> Value 377427776 -> Code 427776
+Test Threshold 10 (JJU3): Code generation time: 172691083 ns
+JJU3:55917848: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917848: Reconstructed [22, 127, 23, 64, ...] -> Value 377427776 -> Code 427776
+Test Threshold 10 (JJU3): Code generation time: 228943333 ns
+JJU3:55917848: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917848: Reconstructed [22, 127, 23, 64, ...] -> Value 377427776 -> Code 427776
+Test Threshold 10 (JJU3): Code generation time: 169361292 ns
+JJU3:55917848: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917848: Reconstructed [22, 127, 23, 64, ...] -> Value 377427776 -> Code 427776
+Test Threshold 10 (JJU3): Code generation time: 222322708 ns
+JJU3:55917849: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917849: Reconstructed [16, 227, 75, 185, ...] -> Value 283331513 -> Code 331513
+Test Threshold 10 (JJU3): Code generation time: 169665208 ns
+JJU3:55917849: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917849: Reconstructed [16, 227, 75, 185, ...] -> Value 283331513 -> Code 331513
+Test Threshold 10 (JJU3): Code generation time: 209601625 ns
+JJU3:55917849: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917849: Reconstructed [16, 227, 75, 185, ...] -> Value 283331513 -> Code 331513
+Test Threshold 10 (JJU3): Code generation time: 174896375 ns
+JJU3:55917849: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917849: Reconstructed [16, 227, 75, 185, ...] -> Value 283331513 -> Code 331513
+Test Threshold 10 (JJU3): Code generation time: 218498209 ns
+JJU3:55917849: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917849: Reconstructed [16, 227, 75, 185, ...] -> Value 283331513 -> Code 331513
+Test Threshold 10 (JJU3): Code generation time: 196164334 ns
+JJU3:55917849: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917849: Reconstructed [16, 227, 75, 185, ...] -> Value 283331513 -> Code 331513
+Test Threshold 10 (JJU3): Code generation time: 234486167 ns
+JJU3:55917850: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917850: Reconstructed [40, 120, 161, 18, ...] -> Value 678994194 -> Code 994194
+Test Threshold 10 (JJU3): Code generation time: 169839375 ns
+JJU3:55917850: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917850: Reconstructed [40, 120, 161, 18, ...] -> Value 678994194 -> Code 994194
+Test Threshold 10 (JJU3): Code generation time: 207440333 ns
+JJU3:55917850: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917850: Reconstructed [40, 120, 161, 18, ...] -> Value 678994194 -> Code 994194
+Test Threshold 10 (JJU3): Code generation time: 178019875 ns
+JJU3:55917850: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917850: Reconstructed [40, 120, 161, 18, ...] -> Value 678994194 -> Code 994194
+Test Threshold 10 (JJU3): Code generation time: 209938417 ns
+JJU3:55917850: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917850: Reconstructed [40, 120, 161, 18, ...] -> Value 678994194 -> Code 994194
+Test Threshold 10 (JJU3): Code generation time: 181724375 ns
+JJU3:55917850: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917850: Reconstructed [40, 120, 161, 18, ...] -> Value 678994194 -> Code 994194
+Test Threshold 10 (JJU3): Code generation time: 216526083 ns
+JJU3:55917851: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917851: Reconstructed [68, 234, 94, 77, ...] -> Value 1156210253 -> Code 210253
+Test Threshold 10 (JJU3): Code generation time: 193251167 ns
+JJU3:55917851: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917851: Reconstructed [68, 234, 94, 77, ...] -> Value 1156210253 -> Code 210253
+Test Threshold 10 (JJU3): Code generation time: 227023166 ns
+JJU3:55917851: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917851: Reconstructed [68, 234, 94, 77, ...] -> Value 1156210253 -> Code 210253
+Test Threshold 10 (JJU3): Code generation time: 174915625 ns
+JJU3:55917851: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917851: Reconstructed [68, 234, 94, 77, ...] -> Value 1156210253 -> Code 210253
+Test Threshold 10 (JJU3): Code generation time: 210108958 ns
+JJU3:55917851: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917851: Reconstructed [68, 234, 94, 77, ...] -> Value 1156210253 -> Code 210253
+Test Threshold 10 (JJU3): Code generation time: 301840583 ns
+JJU3:55917851: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917851: Reconstructed [68, 234, 94, 77, ...] -> Value 1156210253 -> Code 210253
+Test Threshold 10 (JJU3): Code generation time: 213552791 ns
+JJU3:55917852: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917852: Reconstructed [164, 33, 17, 165, ...] -> Value 2753630629 -> Code 630629
+Test Threshold 10 (JJU3): Code generation time: 201945125 ns
+JJU3:55917852: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917852: Reconstructed [164, 33, 17, 165, ...] -> Value 2753630629 -> Code 630629
+Test Threshold 10 (JJU3): Code generation time: 226525083 ns
+JJU3:55917852: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917852: Reconstructed [164, 33, 17, 165, ...] -> Value 2753630629 -> Code 630629
+Test Threshold 10 (JJU3): Code generation time: 179692584 ns
+JJU3:55917852: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917852: Reconstructed [164, 33, 17, 165, ...] -> Value 2753630629 -> Code 630629
+Test Threshold 10 (JJU3): Code generation time: 211950208 ns
+JJU3:55917852: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917852: Reconstructed [164, 33, 17, 165, ...] -> Value 2753630629 -> Code 630629
+Test Threshold 10 (JJU3): Code generation time: 185960750 ns
+JJU3:55917852: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917852: Reconstructed [164, 33, 17, 165, ...] -> Value 2753630629 -> Code 630629
+Test Threshold 10 (JJU3): Code generation time: 215055208 ns
+JJU3:55917853: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917853: Reconstructed [158, 253, 177, 67, ...] -> Value 2667426115 -> Code 426115
+Test Threshold 10 (JJU3): Code generation time: 172461959 ns
+JJU3:55917853: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917853: Reconstructed [158, 253, 177, 67, ...] -> Value 2667426115 -> Code 426115
+Test Threshold 10 (JJU3): Code generation time: 203744209 ns
+JJU3:55917853: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917853: Reconstructed [158, 253, 177, 67, ...] -> Value 2667426115 -> Code 426115
+Test Threshold 10 (JJU3): Code generation time: 205947042 ns
+JJU3:55917853: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917853: Reconstructed [158, 253, 177, 67, ...] -> Value 2667426115 -> Code 426115
+Test Threshold 10 (JJU3): Code generation time: 238949917 ns
+JJU3:55917853: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917853: Reconstructed [158, 253, 177, 67, ...] -> Value 2667426115 -> Code 426115
+Test Threshold 10 (JJU3): Code generation time: 178107417 ns
+JJU3:55917853: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917853: Reconstructed [158, 253, 177, 67, ...] -> Value 2667426115 -> Code 426115
+Test Threshold 10 (JJU3): Code generation time: 218128875 ns
+JJU3:55917854: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917854: Reconstructed [18, 244, 158, 5, ...] -> Value 318021125 -> Code 021125
+Test Threshold 10 (JJU3): Code generation time: 183793917 ns
+JJU3:55917854: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917854: Reconstructed [18, 244, 158, 5, ...] -> Value 318021125 -> Code 021125
+Test Threshold 10 (JJU3): Code generation time: 212186000 ns
+JJU3:55917854: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917854: Reconstructed [18, 244, 158, 5, ...] -> Value 318021125 -> Code 021125
+Test Threshold 10 (JJU3): Code generation time: 193409208 ns
+JJU3:55917854: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917854: Reconstructed [18, 244, 158, 5, ...] -> Value 318021125 -> Code 021125
+Test Threshold 10 (JJU3): Code generation time: 227292250 ns
+JJU3:55917854: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917854: Reconstructed [18, 244, 158, 5, ...] -> Value 318021125 -> Code 021125
+Test Threshold 10 (JJU3): Code generation time: 177892166 ns
+JJU3:55917854: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917854: Reconstructed [18, 244, 158, 5, ...] -> Value 318021125 -> Code 021125
+Test Threshold 10 (JJU3): Code generation time: 219446208 ns
+JJU3:55917855: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917855: Reconstructed [28, 100, 61, 89, ...] -> Value 476331353 -> Code 331353
+Test Threshold 10 (JJU3): Code generation time: 181350625 ns
+JJU3:55917855: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917855: Reconstructed [28, 100, 61, 89, ...] -> Value 476331353 -> Code 331353
+Test Threshold 10 (JJU3): Code generation time: 209234958 ns
+JJU3:55917855: Connecting to broker mqtt://garou.isi.jhu.edu:1883 (will wait for 10 responses)
+JJU3:55917855: Reconstructed [28, 100, 61, 89, ...] -> Value 476331353 -> Code 331353
+Test Threshold 10 (JJU3): Code generation time: 189411500 ns
