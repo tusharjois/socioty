@@ -4,17 +4,17 @@
 2. Each node has been configured in .ssh/config as <node$i> where 1 <= i <= 12 
 ## Host contained scripts
 ### microbenchmark_deployment
-usage: microbenchmark_deployment <build> <send>
+usage: microbenchmark_deployment <build> <send> <test> <iterations> <retrieve>
 - Goal: compile and deploy the target builds to the nodes
 - *build* compiles both rpi 2/3 and rpi zero targets
 - *send* sends the targts to the corresponding nodes
-- note: uses colored output, could remove if script fails to load the module
+- *test* run the microbenchmarks on the nodes
+- *iterations* number of iterations for each test
+- *retrieve* pull output files from nodes into `microbenchmark_data` dir
 
 ### coap_benchmarking
-usage: coap_benchmarking <configs> <run>
+usage: coap_benchmarking
 - Goal: Run coap benchmarking across the nodes. Host machine runs coap request and kills processes on the nodes through cleanup_procs script.
-- *configs* generates config files for each node
-- *run* Send configs files to the nodes, runs the test
 
 ### mqtt_benchmarking
 usage: mqtt_benchmarking.sh <configs> <run>
@@ -30,6 +30,16 @@ usage: local_benchmarking <number of rounds>
 usage: cleanup_procs <proc to kill>
 - Goal: Run to kill coap node process 
 - *proc to kill* process to kill on the node
+
+
+### OLD: coap_benchmarking
+usage: coap_benchmarking <configs> <run>
+- Goal: Run coap benchmarking across the nodes. Host machine runs coap request and kills processes on the nodes through cleanup_procs script.
+- *configs* generates config files for each node
+- *run* Send configs files to the nodes, runs the test
+
+
+
 
 # Data
 ## Microbenchmarks

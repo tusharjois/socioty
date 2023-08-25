@@ -13,4 +13,4 @@ confy = { version = "0.5.0" }
 serde = { version = "1.0", features = ["derive"] }
 rand = { version = "0.7" }
 socioty = { path = "../.." }
-ascon-aead = { version = "0.4" }
+ascon-aead = { version = "0.4.0" }

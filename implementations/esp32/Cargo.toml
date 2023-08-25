@@ -13,7 +13,7 @@ aead = ["dep:ascon-aead"]
 esp-idf-sys = { version = "0.31.11", features = ["binstart"] }
 socioty = { path = "../.." }
 rand_core = { version = "0.5" }
-ascon-aead = { version = "0.4", optional = true }
+ascon-aead = { version = "0.4.0", optional = true }
 
 [build-dependencies]
 embuild = "0.30.4"

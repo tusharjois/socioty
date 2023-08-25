@@ -1,6 +1,4 @@
-#!/bin/zsh -f
-
-autoload colors; colors
+#!/bin/bash 
 
 # Compile command
 ccmd="cargo build -p socioty_benchmark --release --target" # Add target based on the device 
@@ -21,25 +19,52 @@ if [[ $1 == "build" ]]; then
         exit 1
     fi
 fi
+#### Ugly, but need to need to know how many nodes there are
+. /ssh_pi.configs
+numPiTwoThree=${#pi_two_three[@]}
+numPiZero=${#pi_zero[@]}
 if [[ $2 == "send" ]]; then
-    # Pi Model 2/3
-    # ssh config has nodes listed as <nodeXX>
-    for i in {1..9}
-    do
-        echo "$fg_bold[blue]Node0$i$reset_color"
-        scp benches/local_benchmarking node0$i:/home/logan/benchmarks
-        scp target/$pitwo_three/release/socioty_benchmark_eval node0$i:/home/logan/benchmarks
-        scp target/$pitwo_three/release/socioty_benchmark_reconstruct node0$i:/home/logan/benchmarks
-        scp target/$pitwo_three/release/socioty_benchmark_init node0$i:/home/logan/benchmarks
-        echo "$fg_bold[green]Node0$i Done$reset_color"
-    done
-    for i in {10..12}
-    do
-        echo "$fg_bold[blue]Node0$i$reset_color"
-        scp benches/local_benchmarking node$i:/home/logan/benchmarks
-        scp target/$pizero/release/socioty_benchmark_eval node$i:/home/logan/benchmarks
-        scp target/$pizero/release/socioty_benchmark_reconstruct node$i:/home/logan/benchmarks
-        scp target/$pizero/release/socioty_benchmark_init node$i:/home/logan/benchmarks
-        echo "$fg_bold[green]Node0$i Done$reset_color"
-    done
+  # Pi Model 2/3
+  # ssh config has nodes listed as <nodeXX>
+  #for i in {1..9}
+  for (( i=0; i<${numPiTwoThree}; i++ ));
+  do
+      echo "Node$i"
+      scp local_benchmarking node$i:/home/node/benchmarks
+      scp ../target/$pitwo_three/release/socioty_benchmark_eval node$i:/home/node/benchmarks
+      scp ../target/$pitwo_three/release/socioty_benchmark_reconstruct node$i:/home/node/benchmarks
+      scp ../target/$pitwo_three/release/socioty_benchmark_init node$i:/home/node/benchmarks
+      echo "Node$i Done"
+  done
+
+  #for i in {10..12}
+  for (( i=${numPiTwoThree}; i<(${numPiTwoThree}+${numPiZero}); i++ ));
+  do
+      echo "Node$i"
+      scp local_benchmarking node$i:/home/node/benchmarks
+      scp ../target/$pizero/release/socioty_benchmark_eval node$i:/home/node/benchmarks
+      scp ../target/$pizero/release/socioty_benchmark_reconstruct node$i:/home/node/benchmarks
+      scp ../target/$pizero/release/socioty_benchmark_init node$i:/home/node/benchmarks
+      echo "Node$i Done"
+  done
+fi
+
+nodes=(${pi_two_three[@]} ${pi_zero[@]})
+if [[ $3 == "test" ]]; then
+#  nodes=(${pi_two_three[@]} ${pi_zero[@]})
+  for (( i=0; i<(${#nodes[@]}); i++ ));
+  do
+    echo "Node$i running"
+    #eval "ssh node${i} 'cd benchmarks; nohup /home/node/benchmarks/local_benchmarking 100 >/dev/null 2>&1 &'"
+    eval "ssh node${i} 'cd benchmarks; /home/node/benchmarks/local_benchmarking $4'"
+    echo "Node$i finished"
+  done
+fi
+if [[ $5 == "retrieve" ]]; then
+  for (( i=0; i<(${#nodes[@]}); i++ ));
+  do
+    echo "Copying results from Node${i}"
+    mkdir "microbenchmark_data/node${i}"
+    scp node${i}:/home/node/benchmarks/output/* microbenchmark_data/node${i}/
+  done
 fi

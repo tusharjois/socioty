@@ -43,7 +43,10 @@ def parse_coap_mqtt(dir: str, use_pairs=True):
 
 
 def parse_microbenchmarks(dir: str, bench: str, use_pairs=True):
+    # TODO: Update nodes list to align with device setup
     nodes = {"node1": "RPi 3B+", "node7": "RPi 2B", "node12": "RPi Zero"}
+    # TODO: Update iterations to align with experiment setup
+    iterations = 100000
     n = 12
     results = {}
 
@@ -53,8 +56,9 @@ def parse_microbenchmarks(dir: str, bench: str, use_pairs=True):
     if bench in ["eval", "nomac"]:
         for node in nodes:
             row = nodes[node]
-            results[row] = []
-            with open("microbenchmark_data/{}/eval_100000_iterations{}.txt".format(node, "_nomac" if bench == "nomac" else "")) as f:
+            if row not in results:
+                results[row] = []
+            with open("microbenchmark_data/{}/eval_{}_iterations{}.txt".format(node, iterations, "_nomac" if bench == "nomac" else "")) as f:
                 duration = f.read()[:-1]
                 if duration[-2:] == "ms":
                     results[row].append(float(duration[:-2]))
@@ -71,8 +75,10 @@ def parse_microbenchmarks(dir: str, bench: str, use_pairs=True):
                     continue
                 row = "{} $\mathsf{}$ $(n = {}, t = {})$".format(nodes[node],
                                                                  r"{Gen}" if bench == "init" else r"{Recon}", i, i-j)
-                results[row] = []
-                with open("microbenchmark_data/{}/{}_100000_{}_{}.txt".format(node, bench, i, i-j)) as f:
+                if row not in results:
+                    results[row] = []
+                #with open("microbenchmark_data/{}/{}_{}_{}_{}.txt".format(node, bench, iterations, i, i-j)) as f:
+                with open(f"microbenchmark_data/{node}/{bench}_{iterations}_{i}_{i-j}.txt") as f:
                     duration = f.read()[:-1]
                     if duration[-2:] == "ms":
                         results[row].append(float(duration[:-2]))
@@ -88,7 +94,8 @@ def parse_microbenchmarks(dir: str, bench: str, use_pairs=True):
 
 
 def parse_esp32(dir: str, bench: str, use_pairs=True):
-    serial_ids = ["144460", "1444710", "1444730", "1444740"]
+    #serial_ids = ["144460", "1444710", "1444730", "1444740"]
+    serial_ids = ["144410", "14430"]
     n = 12
     results = {}
 

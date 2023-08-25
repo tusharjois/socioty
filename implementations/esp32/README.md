@@ -54,8 +54,8 @@ usage: esp_benchmarking <logfile directory> <init> <reconstruct> <eval>
 #### Hardcoded values that need to be changed
 - ```export_sh="/Users/logan/export-esp.sh"``` location of export-esp.sh script
 - Device names:
-    - ```device1="usbserial-144460"``` 
+    -```device1="usbserial-144460"``` 
     - ```device2="usbserial-1444710"```
     - ```device3="usbserial-1444720"```
     - ```device4="usbserial-1444730"```
-    - ```device5="usbserial-1444740"```
+- ```device5="usbserial-1444740"```

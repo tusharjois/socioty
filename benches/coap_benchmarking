@@ -1,56 +1,92 @@
 #!/bin/bash 
 
-base_ip="128.220.247"
+. /ssh_pi.configs
+nodes=(${pi_two_three[@]} ${pi_zero[@]})
+
+#base_ip="128.220.247"
+#nodes=("222" "223" "224" "226" "230" "231" "242" "243" "244" "245" "246" "247")
 port="5683"
-nodes=("222" "223" "224" "226" "230" "231" "242" "243" "244" "245" "246" "247")
 iterations=1000
 stamp=1675014677
+echo "${nodes[@]}"
 
-for n in {5..12}
+### Send coap binary #####
+pizero="arm-unknown-linux-musleabihf"
+pitwo_three="armv7-unknown-linux-musleabihf"
+numPiTwoThree=${#pi_two_three[@]}
+numPiZero=${#pi_zero[@]}
+for (( i=0; i<${numPiTwoThree}; i++ ));
+do
+  scp ../target/$pitwo_three/release/socioty_coap_node node$i:/home/node/coap
+done
+for (( i=${numPiTwoThree}; i<(${numPiTwoThree}+${numPiZero}); i++ ));
+do
+  scp ../target/$pizero/release/socioty_coap_node node$i:/home/node/coap
+done
+
+#### Send cleanup_procs script ####
+for (( i=0; i<(${#nodes[@]}); i++ ));
+do
+  echo "Sending cleanup_procs script to Node${i}"
+  eval "scp cleanup_procs node${i}:/home/node/"
+done
+
+data_dir="coap_data"
+
+#mkdir coap_tmp
+
+#for n in {5..12}
+for (( n=3; n<(${#nodes[@]}+1); n++ ));
 do
     init_config_str="clients = [\n"
     # Add correct IP addresses to init toml file. Run coap init
     for (( i=0; i<$n; i++ ))
     do
-        init_config_str+="\"${base_ip}.${nodes[i]}:${port}\",\n"
+        #init_config_str+="\"${base_ip}.${nodes[i]}:${port}\",\n"
+        init_config_str+="\"${nodes[i]}:${port}\",\n"
     done
     init_config_str+="]\n"
 
     for (( t=$n-2; t<=$n; t++ ))
     do
         echo "Running: n=${n} t=${t}"
-        run_dir="run_${n}_${t}"
+        #run_dir="${data_dir}/run_${n}_${t}"
+        run_dir="${data_dir}/run_${n}_${t}"
         mkdir ${run_dir}
-        echo -e "${init_config_str}k=${t}" > "${run_dir}/init_config_${n}_${t}.toml"
         cd "${run_dir}/"
-        eval "/home/lkostic1/socioty-main/target/release/socioty_coap_init init_config_${n}_${t}.toml"
+        echo -e "${init_config_str}k=${t}" > "init_config_${n}_${t}.toml"
+        #eval "/home/lkostic1/socioty-main/target/release/socioty_coap_init init_config_${n}_${t}.toml"
+        eval "/socioty/target/release/socioty_coap_init init_config_${n}_${t}.toml"
 
         #send to nodes toml files
         echo "copying files"
-        for (( i=1; i<=$n; i++ ))
+        for (( i=0; i<$n; i++ ))
         do
-            let j=i-1
-            eval "scp ${base_ip}.${nodes[j]}_${port}_config.toml node${i}:coap/${run_dir}_node.toml"
-            eval "ssh node${i} 'nohup /home/logan/coap/socioty_coap_node coap/${run_dir}_node.toml >/dev/null 2>&1 &'"
+            eval "scp ${nodes[i]}_${port}_config.toml node${i}:coap/run_${n}_${t}_node.toml"
+            #eval "ssh node${i} 'nohup /home/logan/coap/socioty_coap_node coap/${run_dir}_node.toml >/dev/null 2>&1 &'"
+            eval "ssh node${i} 'nohup /home/node/coap/socioty_coap_node coap/run_${n}_${t}_node.toml >/dev/null 2>&1 &'"
         done
         echo "copying files done"
         sleep 1
 
         echo "Starting iterations"
         touch ../run_${n}_${t}_output.txt
+        #touch ${data_dir}/run_${n}_${t}_output.txt
         for (( itr=0; itr<$iterations; itr++ ))
         do
             echo "Iteration${itr}: " >> ../run_${n}_${t}_output.txt
-            eval "/home/lkostic1/socioty-main/target/release/socioty_coap_request request_config.toml $stamp $t >> ../run_${n}_${t}_output.txt"
+            #eval "/home/lkostic1/socioty-main/target/release/socioty_coap_request request_config.toml $stamp $t >> ../run_${n}_${t}_output.txt"
+            eval "/socioty/target/release/socioty_coap_request request_config.toml $stamp $t >> ../run_${n}_${t}_output.txt"
         done
 
         echo "killing procs now"
-        for (( i=1; i<=$n; i++ ))
+        for (( i=0; i<$n; i++ ))
         do
             eval "ssh node${i} './cleanup_procs socioty_coap_node'"
         done
         echo "killing procs done"
         sleep 1
-        cd ..
+        #cd ..
+        cd ../..
     done
 done
