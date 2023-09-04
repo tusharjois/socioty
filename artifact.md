@@ -33,7 +33,7 @@ Time estimates: Really based on if you use Rapsberry Pi Zeros in the testing, si
 
 ### Accessibility
 - GitHub Repository: https://github.com/tusharjois/socioty/
-- Commit Tag: `artifact`
+- Commit Branch: `artifact_review`
 
 ### Set up the environment
 
@@ -61,7 +61,7 @@ On the coordinating node, perform the following steps:
 ```bash
 git clone https://github.com/tusharjois/socioty.git
 cd socioty/
-git checkout artifact
+git checkout artifact_review
 ```
 
 3. Add the IP addresses of each Raspberry Pi to the `ssh_pi.configs` file. **Note**: RPi 2/3 and RPi Zero IP addresses are seperated intentionally. Make sure to add the IP address to the appropriate list. *Failure to do this properly will cause the testing to fail.*
