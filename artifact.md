@@ -93,6 +93,10 @@ PATH="/root/.cargo/bin:${PATH}"
 cargo install espup
 espup install
 
+# Install espflash tooling
+cargo install cargo-espflash
+cargo install espflash
+
 # Source the environment from the espup installer
 . ~/export-esp.sh
 
