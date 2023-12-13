@@ -95,7 +95,7 @@ def parse_microbenchmarks(dir: str, bench: str, use_pairs=True):
 
 def parse_esp32(dir: str, bench: str, use_pairs=True):
     #serial_ids = ["144460", "1444710", "1444730", "1444740"]
-    serial_ids = ["144410", "14430"]
+    serial_ids = ["ttyUSB0", "ttyUSB1"]
     n = 12
     results = {}
 
@@ -106,7 +106,21 @@ def parse_esp32(dir: str, bench: str, use_pairs=True):
         row = "$\mathsf{TDPRF.PartialEval}$"
         results[row] = []
         for serial_id in serial_ids:
-            with open("esp32_data/eval_usbserial-{}.txt".format(serial_id)) as f:
+            with open("esp32_data/eval_{}_nomac.txt".format(serial_id)) as f:
+                for line in f.readlines():
+                    if "Run " in line:
+                        duration = line.split(": ")[1][:-1]
+                        if duration[-2:] == "ms":
+                            results[row].append(float(duration[:-2]))
+                        elif duration[-1:] == "s":
+                            results[row].append(float(duration[:-1]) * 1000)
+                        else:
+                            raise ValueError(duration)
+
+        row = "$\mathsf{TDPRF.PartialEval(AE)}$"
+        results[row] = []
+        for serial_id in serial_ids:
+            with open("esp32_data/eval_{}.txt".format(serial_id)) as f:
                 for line in f.readlines():
                     if "Run " in line:
                         duration = line.split(": ")[1][:-1]
@@ -127,7 +141,7 @@ def parse_esp32(dir: str, bench: str, use_pairs=True):
                 r"{Gen}" if bench == "init" else r"{Recon}", i, i-j)
             results[row] = []
             for serial_id in serial_ids:
-                with open("esp32_data/{}_usbserial-{}_run_{}_{}.txt".format(bench, serial_id, i, i-j)) as f:
+                with open("esp32_data/{}_{}_run_{}_{}.txt".format(bench, serial_id, i, i-j)) as f:
                     for line in f.readlines():
                         if "Reconstruct" in line or ("Run " in line and ":" in line):
                             duration = line.split(":")[1][:-1]

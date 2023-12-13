@@ -84,14 +84,27 @@ cat /root/.ssh/socioty_nodes.pub
 #### ESP32 Setup
 On the system with ESP32 access, perform the following steps:
 
+1. Install `expect`
+
+2. Run the following
 ```bash
 # Install Rust
 curl https://sh.rustup.rs -sSf | bash -s -- -y
 PATH="/root/.cargo/bin:${PATH}"
 
+# If on Linux
+apt install libxml2
+# Install linker
+cargo install ldproxy
 # Install espup, the ESP32 rust toolchain
-cargo install espup
-espup install
+cargo install espup@0.2.6
+espup install --toolchain-version 1.67.0.0
+
+# Install tooling to flash ESP32 devices
+cargo install cargo-espflash@1.7.0
+cargo install espflash@1.7.0
+# Could require the following dependency libudev to be installed 
+# For Ubuntu it was librust-libudev-sys-dev
 
 # Source the environment from the espup installer
 . ~/export-esp.sh
@@ -108,11 +121,12 @@ Before running the experiments, the following variables in the `implementations/
 
 - `export_sh` this variable is the location of the "export-esp.sh" script
 - `device<n>` the device variables are the ESP32 boards connected to your machine. `/dev/tty.xxxx` is the typical
-location. Commented out variables are shown for an example.
+location. Commented-out variables are shown as an example.
+- Depending on your OS, you may need to modify permissions to write to the serial device (if you don't have permissions to the group the device is under)
 
 ### Testing the Environment
 The Docker container will fail to build if there is an issue with the first two parts of the environment.
-The ESP32 toolchain will return an error is there is an issue with the third part of the environment.
+The ESP32 toolchain will return an error if there is an issue with the third part of the environment.
 
 ## Artifact Evaluation
 
@@ -137,16 +151,16 @@ This experiment is to generate the microbenchmark data for the RPi. Once the doc
 
 ```bash
 cd benches/
-./microbenchmark_deployment no send test <# of iterations> retrieve 
+./microbenchmark_deployment no send test <iterations> retrieve 
 ```
 
 This will send the binaries to the nodes, run the microbenchmarks, and retrieve the results file. The number of iterations option will greatly change the 
 run time. On a RPI3, it took about 13 minutes for the tests to complete at 1000 iterations. After the tests finish running, the data will be populated in the
 `microbenchmark_data` directory.
 
-You can run the `parse_data.py` script to generate the tables. The following variables need to be updated:
-- Line 9: `iterations` the number of iterations ran for the previous step
+You can run the `parse_data.py` script (requires `matplotlib`) to generate the tables. The following variables need to be updated:
 - Line 47: `nodes` this dict should align to the experimental setup
+- Line 49: `iterations` the number of iterations ran for the previous step
 
 After these steps:
 

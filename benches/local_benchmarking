@@ -3,6 +3,7 @@
 EVAL_RDS=$1
 
 eval "./socioty_benchmark_eval $EVAL_RDS aead > output/eval_${EVAL_RDS}_iterations.txt"
+eval "./socioty_benchmark_eval $EVAL_RDS > output/eval_${EVAL_RDS}_iterations_nomac.txt"
 
 for n in {5..12}
 do
